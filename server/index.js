@@ -4,6 +4,7 @@ const cors = require('cors');
 const path = require('path');
 
 app.use(express.json());
+app.use(express.static('static'));
 app.use(cors());
 
 const db = require('./models');
